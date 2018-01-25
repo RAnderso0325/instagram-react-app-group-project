@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
+import Nav from './Layout/Nav.js';
+import Footer from "./Layout/Footer.js";
+import ProfileHeader from "./Layout/ProfileHeader.js";
+import Feed from './Feed/Feed.js';
+import Post from './Feed/Post.js';
+import Stories from './Stories.js';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          
-        </p>
+        <Nav />
+        <div className="side-nav-area">
+          <ProfileHeader />
+          <Stories />
+          <Footer />
+        </div>
+        <Feed />
       </div>
     );
   }
