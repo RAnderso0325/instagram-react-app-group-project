@@ -61,6 +61,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  overflow: auto;
 }
 .profile-header, .story-header{
   display: inline-block;
@@ -78,4 +79,18 @@
 .footer a{
   text-decoration: none;
   color: black;
+}
+.single-post{
+  height: auto;
+  width: 500px;
+}
+.post-user-name{
+
+}
+.indiv-post-header{
+  display: inline-block;
+}
+.post-img{
+  height: 500px;
+  overflow: hidden;
 }

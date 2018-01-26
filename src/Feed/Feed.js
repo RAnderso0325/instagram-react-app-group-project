@@ -1,8 +1,16 @@
 import React, { Component } from "react";
+import Post from './Post.js';
 
 class Feed extends Component {
     render(){
-        return(<div></div>);
+        var seeAllPosts = this.props.posts.map(post => {
+            return <Post userName={post.username} profPic={post.userimg} postImg={post.imgurl} likes={post.likes} caption={post.description} date={post.date} comments={post.comments} />;
+        })
+        return(
+            <div>
+                {seeAllPosts}
+            </div>
+        );
     }
 }
 
