@@ -29,7 +29,7 @@ class Nav extends Component {
                         <li><Link to="/"><img className="brand-logo nav-img" src={brandLogo} /></Link></li>
                         <li><Link to="/"><img className="brand-name nav-img" src={brandName} /></Link></li>
                         <li><div><input className="search-bar" value={this.state.search} onChange={this.doSearch} placeholder="Search" /></div></li>
-                        <li><Link to="/explore"><img className="expore-img nav-img" src={exploreImg} /></Link></li>
+                        <li><Link to="/explore"><img className="explore-img nav-img" src={exploreImg} /></Link></li>
                         <li><Link to="/notifications"><img className="heart-img nav-img" src={heartImg} /></Link></li>
                         <li><Link to="/profile"><img className="profile-img nav-img" src={profileImg} /></Link></li>
                     </ul>
