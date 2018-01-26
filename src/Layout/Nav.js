@@ -5,7 +5,8 @@ import brandName from '../images/instagram-name.svg';
 import exploreImg from '../images/compass.png';
 import heartImg from '../images/heart.png';
 import profileImg from '../images/profile.png';
-import Home from '../Home.js';
+
+
 
 class Nav extends Component {
     constructor(props){
@@ -32,7 +33,6 @@ class Nav extends Component {
                         <li><Link to="/notifications"><img className="heart-img nav-img" src={heartImg} /></Link></li>
                         <li><Link to="/profile"><img className="profile-img nav-img" src={profileImg} /></Link></li>
                     </ul>
-                    <Route exact path="/" component={Home} />
                 </div>
             </Router>
         );

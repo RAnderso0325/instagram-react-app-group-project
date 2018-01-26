@@ -43,3 +43,30 @@
   background-size: 20px;
   background-repeat: no-repeat;
 }
+.home-page{
+  display: inline;
+}
+.feed{
+  width: 65%;
+  left: 0;
+}
+.side-nav{
+  width: 35%;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.footer ul{
+  list-style-type: circle;
+}
+
+.footer li{
+  display: inline-block;
+  padding: 20px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: black;
+}
