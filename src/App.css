@@ -3,7 +3,7 @@
   background-color: rgb(250,250,250);
 }
 .nav-img{
-  height: 75px;
+  height: 40px;
   width: auto;
 }
 .brand-name{
@@ -62,8 +62,8 @@
 }
 .user-profile-pic{
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   overflow: hidden;
   background-size: cover;
@@ -74,6 +74,8 @@
 }
 .story-pic{
   border: 5px solid pink;
+  height: 70px;
+  width: 70px;
 }
 .all-stories-area{
   height: 500px;
@@ -89,7 +91,7 @@ img{
 
 .footer li{
   display: inline-block;
-  padding: 20px;
+  padding: 5px;
 }
 
 .footer a{
@@ -111,13 +113,26 @@ img{
   margin-left: 170px;
 }
 .post-user-name{
-
+  width: 300px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 1px;
+  z-index: 99;
+  /* margin-bottom: 37px !important; */
 }
 .indiv-post-header{
   display: inline-block;
+  height: 100%;
+  /* width: 100%; */
+  vertical-align: middle;
+}
+.post-prof-pic{
+  width: 37px;
+  height: 37px;
 }
 .post-img{
-  height: 500px;
+  height: auto;
+  width: 500px;
   overflow: hidden;
 }
 .comment-stuff{
@@ -129,7 +144,14 @@ img{
 }
 .post-header{
   padding-top: 10px;
+  height: 50px;
 }
 .post-like-bar, .post-header, .post-likes, .post-caption, .all-comments, .post-date{
   padding-left: 10px;
+}
+.footer{
+  text-align: left;
+}
+.footer span{
+  padding-left: 45px;
 }

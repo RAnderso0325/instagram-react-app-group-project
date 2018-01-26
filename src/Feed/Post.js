@@ -15,8 +15,8 @@ class Post extends Component {
         return(
             <div className="single-post">
                 <div className="post-header">
-                    <img className="user-profile-pic indiv-post-header" src={this.props.profPic} />
-                    <h3 className="post-user-name indiv-post-header">{this.props.userName}</h3>
+                    <img className="user-profile-pic post-prof-pic" src={this.props.profPic} />
+                    <div className="indiv-post-header"><h3 className="post-user-name">{this.props.userName}</h3></div>
                 </div>
                 <div className="post-img">
                     <img src={this.props.postImg} />
@@ -26,7 +26,7 @@ class Post extends Component {
                     <img className="post-like-stuff" src={comment}/>
                 </div>
                 <div className="post-likes">
-                    <h6>{this.props.likes}</h6>
+                    <h6>{this.props.likes} Me gusta</h6>
                 </div>
                 <div className="post-caption">
                     <h5>{this.props.caption}</h5>
