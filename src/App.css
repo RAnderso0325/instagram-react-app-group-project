@@ -2,27 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.nav-img{
+  height: 75px;
+  width: auto;
+}
+.brand-name{
+  border-left: 1px solid black;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 15px;
+}
+.brand-logo{
+  padding-right: 15px;
+}
+.search-icon{
+  height: 10px;
+  width: auto;
+}
+.navbar ul{
+  list-style: none;
+}
+.navbar li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.search-bar{
+  width: 250px;
+  height: auto;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #999;
+  text-align: center;
+  padding: 7px;
+  z-index: 2;
+  border: 1px solid lightgrey;
+  background-image: url('./images/mag-glass.png');
+  background-position: left;
+  background-size: 20px;
+  background-repeat: no-repeat;
 }
