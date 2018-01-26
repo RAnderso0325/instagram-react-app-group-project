@@ -7,7 +7,7 @@ class Feed extends Component {
             return <Post userName={post.username} profPic={post.userimg} postImg={post.imgurl} likes={post.likes} caption={post.description} date={post.date} comments={post.comments} />;
         })
         return(
-            <div>
+            <div className="feed home-stuff">
                 {seeAllPosts}
             </div>
         );

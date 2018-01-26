@@ -1,7 +1,7 @@
 .App {
   text-align: center;
+  background-color: rgb(250,250,250);
 }
-
 .nav-img{
   height: 75px;
   width: auto;
@@ -19,6 +19,9 @@
   height: 10px;
   width: auto;
 }
+.navbar{
+  background-color: white;
+}
 .navbar ul{
   list-style: none;
 }
@@ -27,7 +30,6 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .search-bar{
   width: 250px;
   height: auto;
@@ -45,15 +47,17 @@
 }
 .home-page{
   display: inline;
+  max-width: 75%;
+}
+.home-stuff{
+  display: inline-block;
 }
 .feed{
-  width: 65%;
-  left: 0;
+
 }
 .side-nav{
-  width: 35%;
+  width: 400px;
   position: absolute;
-  right: 0;
   top: 100px;
 }
 .user-profile-pic{
@@ -61,12 +65,24 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  overflow: auto;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
 }
 .profile-header, .story-header{
   display: inline-block;
 }
-
+.story-pic{
+  border: 5px solid pink;
+}
+.all-stories-area{
+  height: 500px;
+  overflow: scroll;
+}
+img{
+  max-width: 100%;
+  max-height: 100%
+}
 .footer ul{
   list-style-type: circle;
 }
@@ -80,9 +96,19 @@
   text-decoration: none;
   color: black;
 }
+.feed{
+  text-align: center;
+  margin-left: 30px;
+}
 .single-post{
   height: auto;
   width: 500px;
+  text-align: left;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 170px;
 }
 .post-user-name{
 
@@ -93,4 +119,17 @@
 .post-img{
   height: 500px;
   overflow: hidden;
+}
+.comment-stuff{
+  display: inline-block;
+}
+.post-like-stuff{
+  height: 40px;
+  display:inline-block;
+}
+.post-header{
+  padding-top: 10px;
+}
+.post-like-bar, .post-header, .post-likes, .post-caption, .all-comments, .post-date{
+  padding-left: 10px;
 }

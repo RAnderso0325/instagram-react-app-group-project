@@ -7,7 +7,7 @@ import AllStories from "../AllStories.js";
 class SideNav extends Component{
     render(){
         return(
-            <div className="side-nav">
+            <div className="side-nav home-stuff">
                 <ProfileHeader />
                 <hr />
                 <Stories stories={AllStories.stories}/>

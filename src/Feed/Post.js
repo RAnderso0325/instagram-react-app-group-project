@@ -1,15 +1,16 @@
 import React, { Component } from "react";
+import heart from '../images/heart.png';
+import comment from '../images/comment.png';
 
 class Post extends Component {
     render(){
         var allComments = this.props.comments.map(comment => {
-          return(<div className="single-comment">
-            <img src={comment.userimg} />
-            <h5>{comment.username}</h5>
-            <p>{comment.text}</p>
-            <p>{comment.date}</p>
-
-          </div>);
+          return(
+            <div className="single-comment">
+                <div className="comment-stuff"><h5>{comment.username}</h5>
+                </div><div className="comment-stuff"><p>{comment.text}</p></div>
+            </div>
+          );
         });
         return(
             <div className="single-post">
@@ -20,6 +21,10 @@ class Post extends Component {
                 <div className="post-img">
                     <img src={this.props.postImg} />
                 </div>
+                <div className="post-like-bar">
+                    <img className="post-like-stuff" src={heart}/>
+                    <img className="post-like-stuff" src={comment}/>
+                </div>
                 <div className="post-likes">
                     <h6>{this.props.likes}</h6>
                 </div>
@@ -28,6 +33,9 @@ class Post extends Component {
                 </div>
                 <div className="all-comments">
                     {allComments}
+                </div>
+                <div className="post-date">
+                    <p>{this.props.date}</p>
                 </div>
             </div>
         );

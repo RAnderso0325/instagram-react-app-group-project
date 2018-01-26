@@ -5,7 +5,7 @@ class Story extends Component {
         return (
             <div className="story-row">
                 <div className="profile-home-img story-header">
-                    <img className="user-profile-pic" src={this.props.profPic} />
+                    <img className="user-profile-pic story-pic" src={this.props.profPic} />
                 </div>
                 <div className="user-info story-header">
                     <div className="user-display-name user-info-story">
