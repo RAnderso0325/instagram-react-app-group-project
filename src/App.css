@@ -56,6 +56,15 @@
   right: 0;
   top: 100px;
 }
+.user-profile-pic{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile-header, .story-header{
+  display: inline-block;
+}
 
 .footer ul{
   list-style-type: circle;
